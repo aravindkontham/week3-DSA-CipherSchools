@@ -1,0 +1,40 @@
+package Strings;
+
+public class String1 {
+    public static void main(String[] args) {
+//        Using String literals
+        String name="CipherSchools";
+        String name2="CipherSchools";
+
+//        Using String constructors
+        String name3=new String("CipherSchools");
+        String name4=new String("CipherSchools");
+
+        System.out.println(name==name2);//Same object
+        System.out.println(name3==name4);//different objects
+        System.out.println(name==name3);//different obkects
+
+//        Strings are immutable
+//        EveryTime we do an operation on a string, a new object is created
+
+//        1.Concatenation
+        String s1="Hello";
+        String s2="folks";
+        String concat=s1+" "+s2;
+        System.out.println(concat);
+
+        String s3="Arwindd";
+        String s4="Kontham";
+        s3=s3.concat(s4);
+        System.out.println(s3);
+
+//        Checking if Strings are equal
+        System.out.println(s3.equals(s4));
+
+        System.out.println("Creating new String object from character array");
+        char arr[]={'X','A','B','D','P','Y'};
+        String str=new String(arr);//Constructor overloaded
+        System.out.println(str);
+
+    }
+}
