@@ -1,0 +1,50 @@
+//        9.Substring
+        String str="Cricket Lover";
+        String substr=str.substring(0);//Starting index included and till the end
+        System.out.println(substr);
+        String substr1=str.substring(0,8);//Starting index to ending index mentioned with excluded
+        System.out.println(substr1);
+
+//        10.finding character at a given index
+        String name="Johny";
+        char index=name.charAt(2);
+        System.out.println(index);
+
+//        11.char array from a string
+        char arr[]=name.toCharArray();//string to char array
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+
+//        12.check if a string is empty
+        String emptyStr=new String();
+        String emptyStr1="";
+        String blankStr="   ";
+        System.out.println(emptyStr);
+        System.out.println(emptyStr1);
+        System.out.println(emptyStr.equals(""));
+        System.out.println(emptyStr1.equals(""));
+        System.out.println(emptyStr.isEmpty());
+        System.out.println(blankStr.isEmpty());
+        System.out.println(emptyStr.isBlank());
+
+//        13.comparing strings lexicographically
+        String txt1="AHey";
+        String txt2="ABye";
+        System.out.println(txt1.compareTo(txt2));
+        System.out.println(txt2.compareTo(txt1));
+        System.out.println(txt1.compareTo(txt1));
+
+////        14.Trimming the whitespaces from front and end
+        String s=new String("Hello       ");
+        String s1=new String("       Hello");
+        String s2=new String("   Hello      people      ");
+        System.out.println(s.trim());
+        System.out.println(s1.trim());
+        System.out.println(s2.trim());
+
+//        15.Replacing a character
+        String s3="Mathew waade";
+        System.out.println(s3.replace('w','W'));
+        System.out.println(s3.replace("aa","a"));
+
